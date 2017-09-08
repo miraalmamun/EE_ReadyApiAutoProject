@@ -1,2 +1,248 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="e44f0904-c81e-4ebf-ab3c-fe0c91a6bdf5" created="2.1.0" activeEnvironment="Default environment" name="EE Composit2" resourceRoot="" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:vcsConfiguration><con:vcsName>Git</con:vcsName><con:repositoryIdentifier>https://github.com/mdrasul/EE_ReadyApiAutoProject.git</con:repositoryIdentifier></con:vcsConfiguration><con:savedRecentRuns>1</con:savedRecentRuns><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting/><con:authRepository/><con:tags/></con:soapui-project>
+<con:soapui-project id="e44f0904-c81e-4ebf-ab3c-fe0c91a6bdf5" created="2.1.0" activeEnvironment="QA" name="EE Composit2" resourceRoot="" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="e44f0904-c81e-4ebf-ab3c-fe0c91a6bdf5fileName">EE_ReadyApiAutoProject</con:setting></con:settings><con:vcsConfiguration><con:vcsName>Git</con:vcsName><con:repositoryIdentifier>https://github.com/mdrasul/EE_ReadyApiAutoProject.git</con:repositoryIdentifier></con:vcsConfiguration><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest"><con:script>
+// Calling the request headers
+
+import com.eviware.soapui.support.types.StringToStringMap 
+def headers = new StringToStringMap()
+def restEndpoint = context.getProperties().toString()
+if ((restEndpoint).contains('/v2.5/'))
+{
+
+	if ((restEndpoint).contains('staging'))
+	{
+		headers.put( "Authorization", "Bearer e0554a52bf12b176ae14a9f85b60fcb2") // Replace values with those you need 
+	}
+	else if ((restEndpoint).contains('qa'))
+	{
+		headers.put( "Authorization", "Bearer 976a98bca2332872bbb279819b645af7") // Replace values with those you need 
+	}
+	else if ((restEndpoint).contains('dev'))
+	{
+		headers.put( "Authorization", "Need It") // Replace values with those you need 
+	}
+	else
+	{
+		headers.put( "Authorization", "Bearer e0554a52bf12b176ae14a9f85b60fcb2") // Replace values with those you need 
+	}
+
+	
+	// Creating the custom header
+	//headers.put( "Authorization", "Bearer 976a98bca2332872bbb279819b645af7") // Replace values with those you need 
+	//headers.put( "Authorization", "Bearer e0554a52bf12b176ae14a9f85b60fcb2") // Replace values with those you need 
+	//headers.put( "Authorization", "Bearer e0554a52bf12b176ae14a9f85b60fcb2") // Replace values with those you need 
+
+	//== Adding the custom header to request headers
+	request.requestHeaders = headers
+	//httpRequest = context.testStep.testRequest
+	//propertyHolder = httpRequest.getParams()
+}</con:script></con:eventHandlers><con:environment id="91bc2533-d754-4ed7-8bcb-6d204390b2af" name="QA"><con:service type="REST" name="Event Engine"><con:endpoint authProfile="Inherit From Parent" username="" password="" domain="" incomingWss="" outgoingWss="" wssTimeToLive="" wssType="">http://qa-api.msg.com</con:endpoint></con:service><con:databaseConnectionContainer/></con:environment><con:environment id="9aceb8bd-5bce-4527-ba8b-5116011b2c2e" name="staging"><con:service type="REST" name="Event Engine"><con:endpoint authProfile="Inherit From Parent" username="" password="" domain="" incomingWss="" outgoingWss="" wssTimeToLive="" wssType="" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">http://staging-api.msg.com</con:endpoint></con:service><con:databaseConnectionContainer/></con:environment><con:authRepository/><con:tags/><project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.msg</groupId>
+	<artifactId>EE_ReadyApiAutoProject</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
+
+	<name>EE_ReadyApiAutoProject</name>
+
+	<url>https://api.msg.com</url>
+
+
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<suite>EE_ReadyApiAutoProject</suite>
+	</properties>
+
+   <!--Add the SmartBear ReadyAPI plugin repository.-->
+   <!--Maven will download the plugin from the specified URL.-->
+   <pluginRepositories>
+      <pluginRepository>
+         <id>SmartBearPluginRepository</id>
+         <url>http://smartbearsoftware.com/repository/maven2</url>
+      </pluginRepository>
+   </pluginRepositories>
+
+   <build>
+      <plugins>
+         <plugin>
+
+            <!--Plugin groupID used to uniquely identify the project with the plugin.-->
+            <groupId>com.smartbear</groupId>
+
+
+            <!--Plugin artifactId used to find the plugin in the project.-->
+            <artifactId>ready-api-maven-plugin</artifactId>
+
+            <!--Specifies your ReadyAPI version. Maven will use the appropriate plugin version.-->
+            <!--IMPORTANT: Must be the same as your ReadyAPI version.-->
+            <!--For maintenance builds, use 2.1.0-m-SNAPSHOT instead.-->
+            <version>2.1.0</version>
+
+            <!--Add a JDBC driver dependency if your tests use JDBC.-->
+            <!--Maven imports and installs the driver automatically.-->
+            <!--dependencies>
+               <dependency>
+                  <groupId>mysql</groupId>
+                  <artifactId>mysql-connector-java</artifactId>
+                  <version>5.1.6</version>
+               </dependency>
+            </dependencies-->
+
+            <executions>
+               <execution>
+
+                  <!--Specifies the lifecycle phase to run ReadyAPI tests.-->
+                  <!--We recommend using the test phase.-->
+                  <phase>test</phase>
+                  <goals>
+                     <!--Do not change. Commands the Maven plugin to run a functional test.-->
+                     <goal>test</goal>
+                  </goals>
+
+                  <configuration>
+
+                     <!--Required. Specifies the path to the project to execute.-->
+                     <!--For composite projects, specify the folder that contains the project.-->
+                     <projectFile>${basedir}</projectFile>
+
+                     <!--Required for reports. Specifies the format of the report.-->
+                     <!--Possible values: PDF, XLS, HTML, RTF, CSV, TXT and XML.-->
+                     <!--Only available in ReadyAPI Pro.-->
+                     <reportFormat>PDF</reportFormat>
+
+                     <!-- ========= Additional elements ============= -->
+
+                     <!--Commands ReadyAPI to generate JUnit-style reports.-->
+                     <junitReport>true</junitReport>
+
+                     <!--Specifies the folder to store reports in.-->
+                     <reports>${basedir}/target/surefire-reports</reports>
+
+                     <!--Specifies the name of the test suite to be run.-->
+                     <testSuite>Event Engine API Calls V2.5x</testSuite>
+
+                     <!--Specifies the name of the test case to run.-->
+                     <testCase>ZZ_my DebugTest</testCase>
+
+                     <!--Specifies the tags to use.-->
+                     <!--Only the test cases with specified tags will be run.-->
+                     <!--Use the syntax below.-->
+                     <!--tags><param>TestCase tag1, tag2</param></tags-->
+
+                     <!--Overrides service endpoints specified in the test.-->
+                     <endpoint>${testhost}</endpoint>
+
+                     <!--Overrides the host specified in the the test.-->
+                     <!--host></host-->
+
+                     <!--Overrides user name for all requests.-->
+                     <!--username></username-->
+
+                     <!--Overrides passwords for all requests.-->
+                     <!--password></password-->
+
+                     <!--Overrides domain used for requests.-->
+                     <!--domain></domain-->
+
+                     <!--If true, commands Maven to create a printed report.-->
+                     <!--printReport></printReport-->
+
+                     <!--Sets the output folder for reports.-->
+                     <outputFolder>${basedir}/reports/readyapireports</outputFolder>
+
+                     <!--If true, commands Maven to export all requests.-->
+                     <!--exportAll></exportAll-->
+
+                     <!--Specifies the SoapUI settings file to use.-->
+                     <!--settingsFile></settingsFile-->
+
+                     <!--Specifies the type of WSS password.-->
+                     <!--wssPasswordType></wssPasswordType-->
+
+                     <!--Specifies the password for an encrypted project.-->
+                     <!--project.password></project.password -->
+
+                     <!--Specifies the password for an encrypted settings file.-->
+                     <!--settingsFile.password></settingsFile.password-->
+
+                     <!--Specifies the value of a global property for the test run.-->
+                     <!--globalProperties>
+                        <value>Sample Project Property=My sample value</value>
+                     </globalProperties-->
+
+                     <!--Specifies the value of a project property for the test run.-->
+                     <!--projectProperties>
+                        <value>Some Property=My Sample Value</value>
+                     </projectProperties-->
+
+                     <!--Saves the project after the test run.-->
+                     <!--saveAfterRun></saveAfterRun-->
+
+                     <!--If true, commands Maven to continue -->
+                     <!--the test run even when an assertion triggers.-->
+                     <!--testFailIgnore>true</testFailIgnore-->
+
+                     <!--Specifies the report type. Only available in ReadyAPI Pro.-->
+                     <!--Click Reporting on the ReadyAPI toolbar to find available reports.-->
+                     <!--reportName></reportName-->
+
+                     <!--Enables HTML coverage reports. Only available in ReadyAPI Pro.-->
+                     <!--coverage></coverage-->
+
+                     <!--Specifies the environment to use in the test run. -->
+                     <!--Only available in ReadyAPI Pro.-->
+                     <!--environment></environment-->
+
+                     <!--Provides access to ReadyAPI properties.-->
+                     <!--readyApiProperties>
+                        <property>
+                           <! - - A folder with ReadyAPI executable files. - - >
+                           <! - - Used to run a local installation of ReadyAPI. - - >
+                           <name>soapui.home</name>
+                           <value>C:/Program Files/SmartBear/ReadyAPI-2.1.0/bin</value>
+                        </property>
+                     </readyApiProperties-->
+
+                     <!--If true, ReadyAPI will not send usage statistics.-->
+                     <!--optOutUsageStatistics></optOutUsageStatistics-->
+
+                     <!-- ========= /Additional elements ============= -->
+
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin>
+
+         <!--Add Maven Site Plugin.-->
+         <!--This plugin improves test stability and prepares test data for Maven SureFire.-->
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-site-plugin</artifactId>
+            <version>3.5</version>
+            <configuration>
+               <locales>en,fr</locales>
+            </configuration>
+         </plugin>
+
+      </plugins>
+
+   </build>
+
+   <!--Add Maven SureFire Plugin.-->
+   <reporting>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-report-plugin</artifactId>
+            <version>2.19.1</version>
+         </plugin>
+      </plugins>
+   </reporting>
+
+
+
+</project></con:soapui-project>
