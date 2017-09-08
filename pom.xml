@@ -79,7 +79,7 @@
                      <!--Required for reports. Specifies the format of the report.-->
                      <!--Possible values: PDF, XLS, HTML, RTF, CSV, TXT and XML.-->
                      <!--Only available in ReadyAPI Pro.-->
-                     <reportFormat>PDF</reportFormat>
+                     <reportFormat>XML</reportFormat>
 
                      <!-- ========= Additional elements ============= -->
 
