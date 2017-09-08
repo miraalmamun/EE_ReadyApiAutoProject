@@ -101,7 +101,7 @@
                      <!--tags><param>TestCase tag1, tag2</param></tags-->
 
                      <!--Overrides service endpoints specified in the test.-->
-                     <endpoint>System.getenv("testHost")</endpoint>
+                     <endpoint>${testhost}</endpoint>
 
                      <!--Overrides the host specified in the the test.-->
                      <!--host></host-->
