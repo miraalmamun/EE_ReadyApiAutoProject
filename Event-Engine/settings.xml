@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="206bfa28-f7b0-4aae-83d6-0382dd2eb4b6" wadlVersion="http://wadl.dev.java.net/2009/02" name="Event Engine" type="rest" basePath="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:description>Event Engine is an aggregated, digitized bookings data that can be presented as event listings and can be delivered to custom segments across all platforms driving event discovery.
+
+ **Versions** 
+ v1 / v2 / v2.5 
+
+ **Authentication** 
+ To run a successful v2.5 API call, you will need to pass your API Key in the request header.
+
+ **Example:** Authorization(key) Bearer `api_key` (value)</con:description><con:settings><con:setting id="0cedca13-7a2f-40cf-b3ea-90ab3db0ebe9fileName">Event-Engine</con:setting><con:setting id="206bfa28-f7b0-4aae-83d6-0382dd2eb4b6fileName">Event-Engine</con:setting></con:settings><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa-api.msg.com</con:endpoint><con:endpoint>http://staging-api.msg.com</con:endpoint><con:endpoint>https://api.msg.com</con:endpoint></con:endpoints><con:environmentSpec><con:entry environmentId="0cc57d55-fe2d-4aed-9711-a070dae089cb"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:interface>

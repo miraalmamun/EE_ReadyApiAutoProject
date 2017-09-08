@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v2.5/static_data" path="/v2.5/static_data" id="ee569391-2742-4a5b-bdf6-2199397109d2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="9c65243c-a7e3-4ef4-95d1-e81075b38f8cfileName">%2Fv2.5%2Fstatic_data</con:setting><con:setting id="ee569391-2742-4a5b-bdf6-2199397109d2fileName">%2Fv2.5%2Fstatic_data</con:setting></con:settings><con:parameters/><con:method name="v2_5_static_data" id="54a29f03-995c-4123-9cc8-e5b036504424" method="GET"><con:description>This call returns static data.
+  
+ 
+ ** *Authorization required **
+Fetch static data required for UI dropdowns</con:description><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>{
+  "status" : "string",
+  "code" : 0,
+  "message" : "string",
+  "results" : {
+    "cities" : [ { } ],
+    "categories" : [ "string" ],
+    "active_tags" : [ "string" ]
+  }
+}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:even="http://qa-api.msg.com/v2.5/events">even:Response</con:element></con:representation><con:request name="Request 1" id="263697a2-f29e-4f04-9f48-489fc30b268e" mediaType="application/json"><con:settings/><con:endpoint>https://api.msg.com</con:endpoint><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters/><con:environmentSpec><con:entry environmentId="0cc57d55-fe2d-4aed-9711-a070dae089cb"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="1a094b1f-40e4-4c2f-9161-6d62005e215a"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="b695a608-4e04-4152-856c-6fc46423d14e"><con:authProfile>No Authorization</con:authProfile></con:entry></con:environmentSpec></con:request><con:environmentSpec><con:entry environmentId="0cc57d55-fe2d-4aed-9711-a070dae089cb"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:method><con:environmentSpec><con:entry environmentId="0cc57d55-fe2d-4aed-9711-a070dae089cb"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:resource>

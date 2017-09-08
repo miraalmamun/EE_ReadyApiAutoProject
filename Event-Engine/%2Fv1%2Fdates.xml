@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v1/dates" path="/v1/dates" id="dabbf9ec-ad98-483a-922a-82024c1ea14d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="a63720a1-4c1f-4301-938e-b09c1aaed791fileName">%2Fv1%2Fdates</con:setting><con:setting id="dabbf9ec-ad98-483a-922a-82024c1ea14dfileName">%2Fv1%2Fdates</con:setting></con:settings><con:parameters/><con:method name="v1_event_dates" id="4354c65a-da4d-43b6-93bb-41dd86e67c46" method="GET"><con:description>This call returns list of dates for which **RCCS** events are avaiable on sale.  
+ 
+ ** *Authorization not required **
+Fetch lists of dates(NYSS)</con:description><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>{
+  "1-8" : [ {
+    "date" : 0,
+    "is_best_value" : true,
+    "is_on_sale" : true,
+    "is_holiday" : true,
+    "is_sold_out" : true,
+    "is_sponsored_day" : true,
+    "price" : {
+      "min" : 0,
+      "max" : 0
+    },
+    "promo_codes" : [ {
+      "title" : "string"
+    } ],
+    "sponsors" : [ {
+      "title" : "string"
+    } ],
+    "events" : [ {
+      "id" : "string",
+      "price" : { },
+      "promo_codes" : [ { } ],
+      "sponsors" : [ { } ],
+      "start_time" : 0,
+      "is_best_value" : true,
+      "on_sale" : true,
+      "is_on_holiday" : true,
+      "is_sold_out" : true,
+      "is_sponsored_event" : true,
+      "available_seats" : 0,
+      "url" : "string",
+      "venue_id" : "string",
+      "artist_id" : [ "string" ],
+      "location" : [ 0 ],
+      "status" : "string"
+    } ]
+  } ],
+  "9+" : [ { } ],
+  "meta" : [ {
+    "promo_codes" : {
+      "promo_code_title" : {
+        "promo_code_description" : "string",
+        "promo_code_terms" : "string"
+      }
+    },
+    "sponsors" : {
+      "sponsor_title" : {
+        "sponsor_description" : "string",
+        "sponsor_icon_url" : "string",
+        "sponsor_icon_priority" : 0
+      }
+    },
+    "icons" : {
+      "icon_title" : "string"
+    }
+  } ]
+}</con:sampleContent></con:representation><con:request name="Request 1" id="44512f30-e1ef-4c26-9041-af93f5503bc5" mediaType="application/json"><con:settings/><con:endpoint>https://api.msg.com</con:endpoint><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters/><con:environmentSpec><con:entry environmentId="0cc57d55-fe2d-4aed-9711-a070dae089cb"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="1a094b1f-40e4-4c2f-9161-6d62005e215a"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="b695a608-4e04-4152-856c-6fc46423d14e"><con:authProfile>No Authorization</con:authProfile></con:entry></con:environmentSpec></con:request><con:environmentSpec><con:entry environmentId="0cc57d55-fe2d-4aed-9711-a070dae089cb"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:method><con:environmentSpec><con:entry environmentId="0cc57d55-fe2d-4aed-9711-a070dae089cb"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:resource>
