@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.msg</groupId>
+	<artifactId>EE_ReadyApiAutoProject</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
+
+	<name>EE_ReadyApiAutoProject</name>
+
+	<url>https://api.msg.com</url>
+
+
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<suite>EE_ReadyApiAutoProject</suite>
+	</properties>
+
+   <!--Add the SmartBear ReadyAPI plugin repository.-->
+   <!--Maven will download the plugin from the specified URL.-->
+   <pluginRepositories>
+      <pluginRepository>
+         <id>SmartBearPluginRepository</id>
+         <url>http://smartbearsoftware.com/repository/maven2</url>
+      </pluginRepository>
+   </pluginRepositories>
+
+   <build>
+      <plugins>
+         <plugin>
+
+            <!--Plugin groupID used to uniquely identify the project with the plugin.-->
+            <groupId>com.smartbear</groupId>
+
+
+            <!--Plugin artifactId used to find the plugin in the project.-->
+            <artifactId>ready-api-maven-plugin</artifactId>
+
+            <!--Specifies your ReadyAPI version. Maven will use the appropriate plugin version.-->
+            <!--IMPORTANT: Must be the same as your ReadyAPI version.-->
+            <!--For maintenance builds, use 2.1.0-m-SNAPSHOT instead.-->
+            <version>2.1.0</version>
+
+            <!--Add a JDBC driver dependency if your tests use JDBC.-->
+            <!--Maven imports and installs the driver automatically.-->
+            <!--dependencies>
+               <dependency>
+                  <groupId>mysql</groupId>
+                  <artifactId>mysql-connector-java</artifactId>
+                  <version>5.1.6</version>
+               </dependency>
+            </dependencies-->
+
+            <executions>
+               <execution>
+
+                  <!--Specifies the lifecycle phase to run ReadyAPI tests.-->
+                  <!--We recommend using the test phase.-->
+                  <phase>test</phase>
+                  <goals>
+                     <!--Do not change. Commands the Maven plugin to run a functional test.-->
+                     <goal>test</goal>
+                  </goals>
+
+                  <configuration>
+
+                     <!--Required. Specifies the path to the project to execute.-->
+                     <!--For composite projects, specify the folder that contains the project.-->
+                     <projectFile>${basedir}</projectFile>
+
+                     <!--Required for reports. Specifies the format of the report.-->
+                     <!--Possible values: PDF, XLS, HTML, RTF, CSV, TXT and XML.-->
+                     <!--Only available in ReadyAPI Pro.-->
+                     <reportFormat>PDF</reportFormat>
+
+                     <!-- ========= Additional elements ============= -->
+
+                     <!--Commands ReadyAPI to generate JUnit-style reports.-->
+                     <junitReport>true</junitReport>
+
+                     <!--Specifies the folder to store reports in.-->
+                     <reports>${basedir}/target/surefire-reports</reports>
+
+                     <!--Specifies the name of the test suite to be run.-->
+                     <testSuite>Event Engine API Calls V2.5x</testSuite>
+
+                     <!--Specifies the name of the test case to run.-->
+                     <testCase>ZZ_my DebugTest</testCase>
+
+                     <!--Specifies the tags to use.-->
+                     <!--Only the test cases with specified tags will be run.-->
+                     <!--Use the syntax below.-->
+                     <!--tags><param>TestCase tag1, tag2</param></tags-->
+
+                     <!--Overrides service endpoints specified in the test.-->
+                     <!--endpoint></endpoint-->
+
+                     <!--Overrides the host specified in the the test.-->
+                     <!--host></host-->
+
+                     <!--Overrides user name for all requests.-->
+                     <!--username></username-->
+
+                     <!--Overrides passwords for all requests.-->
+                     <!--password></password-->
+
+                     <!--Overrides domain used for requests.-->
+                     <!--domain></domain-->
+
+                     <!--If true, commands Maven to create a printed report.-->
+                     <!--printReport></printReport-->
+
+                     <!--Sets the output folder for reports.-->
+                     <outputFolder>${basedir}/reports/readyapireports</outputFolder>
+
+                     <!--If true, commands Maven to export all requests.-->
+                     <!--exportAll></exportAll-->
+
+                     <!--Specifies the SoapUI settings file to use.-->
+                     <!--settingsFile></settingsFile-->
+
+                     <!--Specifies the type of WSS password.-->
+                     <!--wssPasswordType></wssPasswordType-->
+
+                     <!--Specifies the password for an encrypted project.-->
+                     <!--project.password></project.password -->
+
+                     <!--Specifies the password for an encrypted settings file.-->
+                     <!--settingsFile.password></settingsFile.password-->
+
+                     <!--Specifies the value of a global property for the test run.-->
+                     <!--globalProperties>
+                        <value>Sample Project Property=My sample value</value>
+                     </globalProperties-->
+
+                     <!--Specifies the value of a project property for the test run.-->
+                     <!--projectProperties>
+                        <value>Some Property=My Sample Value</value>
+                     </projectProperties-->
+
+                     <!--Saves the project after the test run.-->
+                     <!--saveAfterRun></saveAfterRun-->
+
+                     <!--If true, commands Maven to continue -->
+                     <!--the test run even when an assertion triggers.-->
+                     <!--testFailIgnore>true</testFailIgnore-->
+
+                     <!--Specifies the report type. Only available in ReadyAPI Pro.-->
+                     <!--Click Reporting on the ReadyAPI toolbar to find available reports.-->
+                     <!--reportName></reportName-->
+
+                     <!--Enables HTML coverage reports. Only available in ReadyAPI Pro.-->
+                     <!--coverage></coverage-->
+
+                     <!--Specifies the environment to use in the test run. -->
+                     <!--Only available in ReadyAPI Pro.-->
+                     <!--environment></environment-->
+
+                     <!--Provides access to ReadyAPI properties.-->
+                     <!--readyApiProperties>
+                        <property>
+                           <! - - A folder with ReadyAPI executable files. - - >
+                           <! - - Used to run a local installation of ReadyAPI. - - >
+                           <name>soapui.home</name>
+                           <value>C:/Program Files/SmartBear/ReadyAPI-2.1.0/bin</value>
+                        </property>
+                     </readyApiProperties-->
+
+                     <!--If true, ReadyAPI will not send usage statistics.-->
+                     <!--optOutUsageStatistics></optOutUsageStatistics-->
+
+                     <!-- ========= /Additional elements ============= -->
+
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin>
+
+         <!--Add Maven Site Plugin.-->
+         <!--This plugin improves test stability and prepares test data for Maven SureFire.-->
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-site-plugin</artifactId>
+            <version>3.5</version>
+            <configuration>
+               <locales>en,fr</locales>
+            </configuration>
+         </plugin>
+
+      </plugins>
+
+   </build>
+
+   <!--Add Maven SureFire Plugin.-->
+   <reporting>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-report-plugin</artifactId>
+            <version>2.19.1</version>
+         </plugin>
+      </plugins>
+   </reporting>
+
+
+
+</project>
