@@ -93,7 +93,7 @@
                      <testSuite>Event Engine API Calls V2.5x</testSuite>
 
                      <!--Specifies the name of the test case to run.-->
-                     <testCase>ZZ_Version Gretzky 2.11.0</testCase>
+                     <!--testCase>ZZ_Version Gretzky 2.11.0</testCase-->
 
                      <!--Specifies the tags to use.-->
                      <!--Only the test cases with specified tags will be run.-->
