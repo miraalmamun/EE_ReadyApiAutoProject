@@ -99,6 +99,8 @@
                      <!--Only the test cases with specified tags will be run.-->
                      <!--Use the syntax below.-->
                      <!--tags><param>TestCase tag1, tag2</param></tags-->
+					 <tags><param>TestCase Smoke</param></tags>
+					
 
                      <!--Overrides service endpoints specified in the test.-->
                      <endpoint>${testhost}</endpoint>
