@@ -12,11 +12,7 @@
 	<packaging>jar</packaging>
 
 	<name>EE_ReadyApiAutoProject</name>
-
 	<url>https://api.msg.com</url>
-
-
-
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
