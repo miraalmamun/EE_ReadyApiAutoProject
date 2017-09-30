@@ -153,7 +153,7 @@
 
                      <!--Specifies the report type. Only available in ReadyAPI Pro.-->
                      <!--Click Reporting on the ReadyAPI toolbar to find available reports.-->
-                     <!--reportName></reportName-->
+                     <reportName>Data Export</reportName>
 
                      <!--Enables HTML coverage reports. Only available in ReadyAPI Pro.-->
                      <!--coverage></coverage-->
