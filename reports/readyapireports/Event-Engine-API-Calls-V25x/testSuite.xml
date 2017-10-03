@@ -93,7 +93,14 @@
   </testCase>
   <testCase>
     <disabled>false</disabled>
-    <label>ZZ_ZustTest</label>
+    <label>ZZ_EE_Test1</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>2</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>ZZ_EE_Test2</label>
     <loadTestCount>0</loadTestCount>
     <securityTestCount>0</securityTestCount>
     <testStepCount>2</testStepCount>

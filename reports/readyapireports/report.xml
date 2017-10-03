@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="EE Composit2.Event Engine API Calls V2.5x" tests="1" failures="1" errors="0" time="1.141" package="EE Composit2" id="1">
+  <testsuite name="EE Composit2.Event Engine API Calls V2.5x" tests="2" failures="1" errors="0" time="2.035" package="EE Composit2" id="1">
     <properties>
       <property name="testhost" value="http://qa-api.msg.com"/>
       <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -29,6 +29,7 @@
       <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
       <property name="os.name" value="Mac OS X"/>
       <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.5.0/libexec/bin/m2.conf"/>
+      <property name="testtag" value="Addhoc"/>
       <property name="sun.jnu.encoding" value="UTF-8"/>
       <property name="java.library.path" value="/Users/rasulm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
       <property name="maven.conf" value="/usr/local/Cellar/maven/3.5.0/libexec/conf"/>
@@ -47,7 +48,7 @@
       <property name="java.class.path" value="/usr/local/Cellar/maven/3.5.0/libexec/boot/plexus-classworlds-2.5.2.jar"/>
       <property name="user.name" value="rasulm"/>
       <property name="java.vm.specification.version" value="1.8"/>
-      <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test site -Dtesthost=http://qa-api.msg.com"/>
+      <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test site -Dtesthost=http://qa-api.msg.com -Dtesttag=Addhoc"/>
       <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre"/>
       <property name="sun.arch.data.model" value="64"/>
       <property name="h2.bindAddress" value="localhost"/>
@@ -69,8 +70,9 @@
       <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
       <property name="sun.cpu.isalist" value=""/>
     </properties>
-    <testcase name="ZZ_ZustTest" time="1.141">
-      <failure type="Failing due to failed test step" message="Failing due to failed test step"><![CDATA[<h3><b>Sample Step 1 Failed</b></h3><pre>[Match content of [status]] Comparison failed. Path: [$['status']]; Expected value: [Successx]; Actual value: [Success].
+    <testcase name="ZZ_EE_Test1" time="1.007"/>
+    <testcase name="ZZ_EE_Test2" time="1.028">
+      <failure type="Failing due to failed test step" message="Failing due to failed test step"><![CDATA[<h3><b>Sample Step 2 Failed</b></h3><pre>[Match content of [status]] Comparison failed. Path: [$['status']]; Expected value: [Successx]; Actual value: [Success].
 </pre><hr/>]]></failure>
     </testcase>
   </testsuite>

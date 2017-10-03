@@ -45,7 +45,8 @@ public class zz_temp {
 	
 	public static void main(String[] args) throws IOException 
 	{
-		
+		System.out.println("==================XX Jira Reporting Class XX================");
+
 		try 
 		{
 			String TestcaseName = "Test case From Java 6";

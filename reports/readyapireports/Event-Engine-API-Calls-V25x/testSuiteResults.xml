@@ -1,687 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSuiteResults>
   <testCase>
-    <startTime>23:52:53</startTime>
+    <startTime>15:05:06</startTime>
     <status>FINISHED</status>
-    <testCaseId>ad391257-c28d-4302-8dc3-10cb36476bf0</testCaseId>
-    <testCaseName>Venues - POSITIVE</testCaseName>
-    <timeTaken>1266</timeTaken>
+    <testCaseId>15371370-7d81-4eae-ac22-a2f8b9257fe2</testCaseId>
+    <testCaseName>ZZ_EE_Test1</testCaseName>
+    <timeTaken>1007</timeTaken>
     <testStepResults>
       <result>
-        <message>Step 1 [Return All Venu] OK: took 460 ms</message>
-        <name>Return All Venu</name>
+        <message>Step 1 [Sample Step 1] OK: took 591 ms</message>
+        <name>Sample Step 1</name>
         <order>2</order>
-        <started>23:52:53.446</started>
+        <started>15:05:06.386</started>
         <status>OK</status>
-        <timeTaken>460</timeTaken>
+        <timeTaken>591</timeTaken>
       </result>
       <result>
-        <message>Step 2 [Return One Venu] OK: took 128 ms</message>
-        <name>Return One Venu</name>
+        <message>Step 2 [Sample Step 2] OK: took 416 ms</message>
+        <name>Sample Step 2</name>
         <order>3</order>
-        <started>23:52:53.969</started>
+        <started>15:05:09.985</started>
         <status>OK</status>
-        <timeTaken>128</timeTaken>
-      </result>
-      <result>
-        <message>Step 3 [Size Only] OK: took 210 ms</message>
-        <name>Size Only</name>
-        <order>4</order>
-        <started>23:52:54.126</started>
-        <status>OK</status>
-        <timeTaken>210</timeTaken>
-      </result>
-      <result>
-        <message>Step 4 [Page Only] OK: took 137 ms</message>
-        <name>Page Only</name>
-        <order>5</order>
-        <started>23:52:54.352</started>
-        <status>OK</status>
-        <timeTaken>137</timeTaken>
-      </result>
-      <result>
-        <message>Step 5 [Size and Page] OK: took 122 ms</message>
-        <name>Size and Page</name>
-        <order>6</order>
-        <started>23:52:54.504</started>
-        <status>OK</status>
-        <timeTaken>122</timeTaken>
-      </result>
-      <result>
-        <message>Step 6 [Size and Page - All] OK: took 209 ms</message>
-        <name>Size and Page - All</name>
-        <order>7</order>
-        <started>23:52:54.640</started>
-        <status>OK</status>
-        <timeTaken>209</timeTaken>
+        <timeTaken>416</timeTaken>
       </result>
     </testStepResults>
     <testStepParameters>
       <parameters>
         <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Return All Venu</testStepName>
+        <testStepName>Sample Step 1</testStepName>
       </parameters>
       <parameters>
         <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Return One Venu</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Size Only</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Page Only</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Size and Page</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Size and Page - All</testStepName>
+        <testStepName>Sample Step 2</testStepName>
       </parameters>
     </testStepParameters>
     <failedTestSteps/>
   </testCase>
   <testCase>
-    <startTime>23:52:54</startTime>
-    <status>FINISHED</status>
-    <testCaseId>b5f4a0ff-7cc4-4bcd-8058-0c06429da08b</testCaseId>
-    <testCaseName>Artists - POSITIVE</testCaseName>
-    <timeTaken>4169</timeTaken>
+    <reason>Failing due to failed test step</reason>
+    <startTime>15:05:11</startTime>
+    <status>FAILED</status>
+    <testCaseId>899d8d2d-9514-4d29-bb9e-02c713ec8b9f</testCaseId>
+    <testCaseName>ZZ_EE_Test2</testCaseName>
+    <timeTaken>1028</timeTaken>
     <testStepResults>
       <result>
-        <message>Step 1 [API Call Only] OK: took 335 ms</message>
-        <name>API Call Only</name>
+        <message>Step 1 [Sample Step 1] OK: took 514 ms</message>
+        <name>Sample Step 1</name>
         <order>2</order>
-        <started>23:52:54.926</started>
+        <started>15:05:11.630</started>
         <status>OK</status>
-        <timeTaken>335</timeTaken>
+        <timeTaken>514</timeTaken>
       </result>
       <result>
-        <message>Step 2 [Size Only] OK: took 155 ms</message>
-        <name>Size Only</name>
+        <message>Step 2 [Sample Step 2] FAILED: took 514 ms
+ -> [Match content of [status]] Comparison failed. Path: [$['status']]; Expected value: [Successx]; Actual value: [Success].</message>
+        <name>Sample Step 2</name>
         <order>3</order>
-        <started>23:52:55.301</started>
-        <status>OK</status>
-        <timeTaken>155</timeTaken>
-      </result>
-      <result>
-        <message>Step 3 [Page Only] OK: took 126 ms</message>
-        <name>Page Only</name>
-        <order>4</order>
-        <started>23:52:55.474</started>
-        <status>OK</status>
-        <timeTaken>126</timeTaken>
-      </result>
-      <result>
-        <message>Step 4 [Size and Page] OK: took 123 ms</message>
-        <name>Size and Page</name>
-        <order>5</order>
-        <started>23:52:55.631</started>
-        <status>OK</status>
-        <timeTaken>123</timeTaken>
-      </result>
-      <result>
-        <message>Step 5 [Size and Page - All] OK: took 932 ms</message>
-        <name>Size and Page - All</name>
-        <order>6</order>
-        <started>23:52:55.771</started>
-        <status>OK</status>
-        <timeTaken>932</timeTaken>
-      </result>
-      <result>
-        <message>Step 6 [Artist ID - > K8vZ9175_m7] OK: took 162 ms</message>
-        <name>Artist ID - > K8vZ9175_m7</name>
-        <order>7</order>
-        <started>23:53:00.634</started>
-        <status>OK</status>
-        <timeTaken>162</timeTaken>
-      </result>
-      <result>
-        <message>Step 7 [Artist Name -> Lavell Crawford] OK: took 190 ms</message>
-        <name>Artist Name -> Lavell Crawford</name>
-        <order>8</order>
-        <started>23:53:00.905</started>
-        <status>OK</status>
-        <timeTaken>190</timeTaken>
-      </result>
-      <result>
-        <message>Step 8 [Artist Name Partial -> (Crawford)] OK: took 120 ms</message>
-        <name>Artist Name Partial -> (Crawford)</name>
-        <order>9</order>
-        <started>23:53:01.104</started>
-        <status>OK</status>
-        <timeTaken>120</timeTaken>
-      </result>
-      <result>
-        <message>Step 9 [Artist ID Events - API Call Only] OK: took 596 ms</message>
-        <name>Artist ID Events - API Call Only</name>
-        <order>10</order>
-        <started>23:53:01.232</started>
-        <status>OK</status>
-        <timeTaken>596</timeTaken>
-      </result>
-      <result>
-        <message>Step 10 [Artist ID Events - Start and End Date] OK: took 869 ms</message>
-        <name>Artist ID Events - Start and End Date</name>
-        <order>11</order>
-        <started>23:53:01.981</started>
-        <status>OK</status>
-        <timeTaken>869</timeTaken>
-      </result>
-      <result>
-        <message>Step 11 [Artist ID Events - Start and End Date &amp; Page] OK: took 140 ms</message>
-        <name>Artist ID Events - Start and End Date &amp; Page</name>
-        <order>12</order>
-        <started>23:53:02.956</started>
-        <status>OK</status>
-        <timeTaken>140</timeTaken>
-      </result>
-      <result>
-        <message>Step 12 [Artist ID Events - Start and End Date &amp; Size] OK: took 236 ms</message>
-        <name>Artist ID Events - Start and End Date &amp; Size</name>
-        <order>13</order>
-        <started>23:53:03.111</started>
-        <status>OK</status>
-        <timeTaken>236</timeTaken>
-      </result>
-      <result>
-        <message>Step 13 [Artist ID Events - Start and End Date &amp; Size &amp; Page] OK: took 185 ms</message>
-        <name>Artist ID Events - Start and End Date &amp; Size &amp; Page</name>
-        <order>14</order>
-        <started>23:53:03.360</started>
-        <status>OK</status>
-        <timeTaken>185</timeTaken>
+        <started>15:05:12.980</started>
+        <status>FAILED</status>
+        <timeTaken>514</timeTaken>
       </result>
     </testStepResults>
     <testStepParameters>
       <parameters>
         <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>API Call Only</testStepName>
+        <testStepName>Sample Step 1</testStepName>
       </parameters>
       <parameters>
         <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Size Only</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Page Only</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Size and Page</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Size and Page - All</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Artist ID - > K8vZ9175_m7</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Artist Name -> Lavell Crawford</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Artist Name Partial -> (Crawford)</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Artist ID Events - API Call Only</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Artist ID Events - Start and End Date</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Artist ID Events - Start and End Date &amp; Page</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Artist ID Events - Start and End Date &amp; Size</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Artist ID Events - Start and End Date &amp; Size &amp; Page</testStepName>
+        <testStepName>Sample Step 2</testStepName>
       </parameters>
     </testStepParameters>
-    <failedTestSteps/>
-  </testCase>
-  <testCase>
-    <startTime>23:53:03</startTime>
-    <status>FINISHED</status>
-    <testCaseId>7603e92e-c405-456e-870a-efd7964f5fae</testCaseId>
-    <testCaseName>Dates - POSITIVE</testCaseName>
-    <timeTaken>2455</timeTaken>
-    <testStepResults>
-      <result>
-        <message>Step 1 [Start Date and End Date] OK: took 156 ms</message>
-        <name>Start Date and End Date</name>
-        <order>2</order>
-        <started>23:53:03.594</started>
-        <status>OK</status>
-        <timeTaken>156</timeTaken>
-      </result>
-      <result>
-        <message>Step 2 [Min Price and Max Price] OK: took 151 ms</message>
-        <name>Min Price and Max Price</name>
-        <order>3</order>
-        <started>23:53:03.767</started>
-        <status>OK</status>
-        <timeTaken>151</timeTaken>
-      </result>
-      <result>
-        <message>Step 3 [Promo Code] OK: took 126 ms</message>
-        <name>Promo Code</name>
-        <order>4</order>
-        <started>23:53:03.931</started>
-        <status>OK</status>
-        <timeTaken>126</timeTaken>
-      </result>
-      <result>
-        <message>Step 4 [Venue Id] OK: took 116 ms</message>
-        <name>Venue Id</name>
-        <order>5</order>
-        <started>23:53:04.076</started>
-        <status>OK</status>
-        <timeTaken>116</timeTaken>
-      </result>
-      <result>
-        <message>Step 5 [Artist id] OK: took 193 ms</message>
-        <name>Artist id</name>
-        <order>6</order>
-        <started>23:53:04.280</started>
-        <status>OK</status>
-        <timeTaken>193</timeTaken>
-      </result>
-      <result>
-        <message>Step 6 [Venue Id &amp; Artist id] OK: took 194 ms</message>
-        <name>Venue Id &amp; Artist id</name>
-        <order>7</order>
-        <started>23:53:04.482</started>
-        <status>OK</status>
-        <timeTaken>194</timeTaken>
-      </result>
-      <result>
-        <message>Step 7 [Sort by Start Date Ascending] OK: took 197 ms</message>
-        <name>Sort by Start Date Ascending</name>
-        <order>8</order>
-        <started>23:53:04.686</started>
-        <status>OK</status>
-        <timeTaken>197</timeTaken>
-      </result>
-      <result>
-        <message>Step 8 [Sort by Start Date Descending] OK: took 191 ms</message>
-        <name>Sort by Start Date Descending</name>
-        <order>9</order>
-        <started>23:53:04.896</started>
-        <status>OK</status>
-        <timeTaken>191</timeTaken>
-      </result>
-      <result>
-        <message>Step 9 [Page] OK: took 118 ms</message>
-        <name>Page</name>
-        <order>10</order>
-        <started>23:53:05.103</started>
-        <status>OK</status>
-        <timeTaken>118</timeTaken>
-      </result>
-      <result>
-        <message>Step 10 [Size] OK: took 118 ms</message>
-        <name>Size</name>
-        <order>11</order>
-        <started>23:53:05.233</started>
-        <status>OK</status>
-        <timeTaken>118</timeTaken>
-      </result>
-      <result>
-        <message>Step 11 [Page &amp; Size] OK: took 135 ms</message>
-        <name>Page &amp; Size</name>
-        <order>12</order>
-        <started>23:53:05.360</started>
-        <status>OK</status>
-        <timeTaken>135</timeTaken>
-      </result>
-      <result>
-        <message>Step 12 [Start Date and End Date and Min price and Max price] OK: took 118 ms</message>
-        <name>Start Date and End Date and Min price and Max price</name>
-        <order>13</order>
-        <started>23:53:05.506</started>
-        <status>OK</status>
-        <timeTaken>118</timeTaken>
-      </result>
-      <result>
-        <message>Step 13 [Start Date and End Date and Min price and Max price &amp; venue_id] OK: took 115 ms</message>
-        <name>Start Date and End Date and Min price and Max price &amp; venue_id</name>
-        <order>14</order>
-        <started>23:53:05.635</started>
-        <status>OK</status>
-        <timeTaken>115</timeTaken>
-      </result>
-      <result>
-        <message>Step 14 [Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id] OK: took 114 ms</message>
-        <name>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id</name>
-        <order>15</order>
-        <started>23:53:05.756</started>
-        <status>OK</status>
-        <timeTaken>114</timeTaken>
-      </result>
-      <result>
-        <message>Step 15 [Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page] OK: took 130 ms</message>
-        <name>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page</name>
-        <order>16</order>
-        <started>23:53:05.877</started>
-        <status>OK</status>
-        <timeTaken>130</timeTaken>
-      </result>
-      <result>
-        <message>Step 16 [Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page &amp; size] OK: took 115 ms</message>
-        <name>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page &amp; size</name>
-        <order>17</order>
-        <started>23:53:06.021</started>
-        <status>OK</status>
-        <timeTaken>115</timeTaken>
-      </result>
-      <result>
-        <message>Step 17 [Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page &amp; size &amp; sort_by] OK: took 168 ms</message>
-        <name>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page &amp; size &amp; sort_by</name>
-        <order>18</order>
-        <started>23:53:06.145</started>
-        <status>OK</status>
-        <timeTaken>168</timeTaken>
-      </result>
-    </testStepResults>
-    <testStepParameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Start Date and End Date</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Min Price and Max Price</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Promo Code</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Venue Id</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Artist id</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Venue Id &amp; Artist id</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Sort by Start Date Ascending</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Sort by Start Date Descending</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Page</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Size</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Page &amp; Size</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Start Date and End Date and Min price and Max price</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Start Date and End Date and Min price and Max price &amp; venue_id</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page &amp; size</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page &amp; size &amp; sort_by</testStepName>
-      </parameters>
-    </testStepParameters>
-    <failedTestSteps/>
-  </testCase>
-  <testCase>
-    <startTime>23:53:06</startTime>
-    <status>FINISHED</status>
-    <testCaseId>93e64b00-d263-4cfb-8aed-b5182227f3a8</testCaseId>
-    <testCaseName>Events - POSITIVE</testCaseName>
-    <timeTaken>4795</timeTaken>
-    <testStepResults>
-      <result>
-        <message>Step 1 [Event All] OK: took 1382 ms</message>
-        <name>Event All</name>
-        <order>2</order>
-        <started>23:53:06.358</started>
-        <status>OK</status>
-        <timeTaken>1382</timeTaken>
-      </result>
-      <result>
-        <message>Step 2 [Min Price and Max Price] OK: took 442 ms</message>
-        <name>Min Price and Max Price</name>
-        <order>3</order>
-        <started>23:53:32.855</started>
-        <status>OK</status>
-        <timeTaken>442</timeTaken>
-      </result>
-      <result>
-        <message>Step 3 [Promo Code] OK: took 392 ms</message>
-        <name>Promo Code</name>
-        <order>4</order>
-        <started>23:53:33.481</started>
-        <status>OK</status>
-        <timeTaken>392</timeTaken>
-      </result>
-      <result>
-        <message>Step 4 [Venue Id] OK: took 260 ms</message>
-        <name>Venue Id</name>
-        <order>5</order>
-        <started>23:53:34.053</started>
-        <status>OK</status>
-        <timeTaken>260</timeTaken>
-      </result>
-      <result>
-        <message>Step 5 [Artist id] OK: took 165 ms</message>
-        <name>Artist id</name>
-        <order>6</order>
-        <started>23:53:34.425</started>
-        <status>OK</status>
-        <timeTaken>165</timeTaken>
-      </result>
-      <result>
-        <message>Step 6 [Venue Id &amp; Artist id] OK: took 191 ms</message>
-        <name>Venue Id &amp; Artist id</name>
-        <order>7</order>
-        <started>23:53:34.690</started>
-        <status>OK</status>
-        <timeTaken>191</timeTaken>
-      </result>
-      <result>
-        <message>Step 7 [Sort by Start Date Ascending] OK: took 200 ms</message>
-        <name>Sort by Start Date Ascending</name>
-        <order>8</order>
-        <started>23:53:34.893</started>
-        <status>OK</status>
-        <timeTaken>200</timeTaken>
-      </result>
-      <result>
-        <message>Step 8 [Sort by Start Date Descending] OK: took 242 ms</message>
-        <name>Sort by Start Date Descending</name>
-        <order>9</order>
-        <started>23:53:35.184</started>
-        <status>OK</status>
-        <timeTaken>242</timeTaken>
-      </result>
-      <result>
-        <message>Step 9 [Page] OK: took 328 ms</message>
-        <name>Page</name>
-        <order>10</order>
-        <started>23:53:35.602</started>
-        <status>OK</status>
-        <timeTaken>328</timeTaken>
-      </result>
-      <result>
-        <message>Step 10 [Size] OK: took 182 ms</message>
-        <name>Size</name>
-        <order>11</order>
-        <started>23:53:36.242</started>
-        <status>OK</status>
-        <timeTaken>182</timeTaken>
-      </result>
-      <result>
-        <message>Step 11 [Page &amp; Size] OK: took 141 ms</message>
-        <name>Page &amp; Size</name>
-        <order>12</order>
-        <started>23:53:36.504</started>
-        <status>OK</status>
-        <timeTaken>141</timeTaken>
-      </result>
-      <result>
-        <message>Step 12 [Start Date and End Date and Min price and Max price] OK: took 182 ms</message>
-        <name>Start Date and End Date and Min price and Max price</name>
-        <order>13</order>
-        <started>23:53:36.699</started>
-        <status>OK</status>
-        <timeTaken>182</timeTaken>
-      </result>
-      <result>
-        <message>Step 13 [Start Date and End Date and Min price and Max price &amp; venue_id] OK: took 131 ms</message>
-        <name>Start Date and End Date and Min price and Max price &amp; venue_id</name>
-        <order>14</order>
-        <started>23:53:36.982</started>
-        <status>OK</status>
-        <timeTaken>131</timeTaken>
-      </result>
-      <result>
-        <message>Step 14 [Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id] OK: took 143 ms</message>
-        <name>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id</name>
-        <order>15</order>
-        <started>23:53:37.169</started>
-        <status>OK</status>
-        <timeTaken>143</timeTaken>
-      </result>
-      <result>
-        <message>Step 15 [Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page] OK: took 122 ms</message>
-        <name>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page</name>
-        <order>16</order>
-        <started>23:53:37.324</started>
-        <status>OK</status>
-        <timeTaken>122</timeTaken>
-      </result>
-      <result>
-        <message>Step 16 [Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page &amp; size] OK: took 142 ms</message>
-        <name>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page &amp; size</name>
-        <order>17</order>
-        <started>23:53:37.456</started>
-        <status>OK</status>
-        <timeTaken>142</timeTaken>
-      </result>
-      <result>
-        <message>Step 17 [Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page &amp; size &amp; sort_by] OK: took 150 ms</message>
-        <name>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page &amp; size &amp; sort_by</name>
-        <order>18</order>
-        <started>23:53:37.604</started>
-        <status>OK</status>
-        <timeTaken>150</timeTaken>
-      </result>
-    </testStepResults>
-    <testStepParameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Event All</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Min Price and Max Price</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Promo Code</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Venue Id</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Artist id</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Venue Id &amp; Artist id</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Sort by Start Date Ascending</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Sort by Start Date Descending</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Page</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Size</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Page &amp; Size</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Start Date and End Date and Min price and Max price</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Start Date and End Date and Min price and Max price &amp; venue_id</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page &amp; size</testStepName>
-      </parameters>
-      <parameters>
-        <iconPath>/rest_request_step.png</iconPath>
-        <testStepName>Start Date and End Date and Min price and Max price &amp; venue_id &amp; artist_id &amp; page &amp; size &amp; sort_by</testStepName>
-      </parameters>
-    </testStepParameters>
-    <failedTestSteps/>
+    <failedTestSteps>
+      <error>
+        <detail>&lt;Error Detail disabled></detail>
+        <icon>rest_request_step.png</icon>
+        <testCaseName>ZZ_EE_Test2</testCaseName>
+        <testStepName>Sample Step 2</testStepName>
+        <testSuiteName>Event Engine API Calls V2.5x</testSuiteName>
+      </error>
+    </failedTestSteps>
   </testCase>
 </testSuiteResults>
