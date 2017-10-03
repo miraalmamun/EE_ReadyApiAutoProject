@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errors>
+  <error>
+    <detail>&lt;Error Detail disabled></detail>
+    <icon>rest_request_step.png</icon>
+    <testCaseName>ZZ_ZustTest</testCaseName>
+    <testStepName>Sample Step 1</testStepName>
+    <testSuiteName>Event Engine API Calls V2.5x</testSuiteName>
+  </error>
+</errors>

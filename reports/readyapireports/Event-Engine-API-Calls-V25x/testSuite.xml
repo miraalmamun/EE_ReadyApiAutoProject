@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSuite>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Venues - POSITIVE</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>6</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Venues - EDGE</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>3</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Venues - NEGATIVE</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>5</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Artists - POSITIVE</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>13</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Artists - EDGE</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>10</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Artists - NEGATIVE</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>12</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Dates - POSITIVE</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>17</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Dates - EDGE</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>17</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Dates - NEGATIVE</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>17</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Events - POSITIVE</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>17</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Events - EDGE</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>17</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Events - NEGATIVE</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>17</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>ZZ_Version Gretzky 2.11.0</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>7</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>ZZ_ZustTest</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>2</testStepCount>
+  </testCase>
+</testSuite>
