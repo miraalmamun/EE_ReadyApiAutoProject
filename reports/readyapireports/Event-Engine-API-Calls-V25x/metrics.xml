@@ -4,21 +4,21 @@
     <category>Result Metrics</category>
     <icon>delay_step.png</icon>
     <name>Start Time</name>
-    <value>Tue Oct 03 15:05:06 EDT 2017</value>
+    <value>Tue Oct 03 16:03:50 EDT 2017</value>
     <valueIcon/>
   </metric>
   <metric>
     <category>Result Metrics</category>
     <icon>delay_step.png</icon>
     <name>End Time</name>
-    <value>Tue Oct 03 15:05:14 EDT 2017</value>
+    <value>Tue Oct 03 16:03:56 EDT 2017</value>
     <valueIcon/>
   </metric>
   <metric>
     <category>Result Metrics</category>
     <icon>delay_step.png</icon>
     <name>Time Taken</name>
-    <value>8592 ms</value>
+    <value>6130 ms</value>
     <valueIcon/>
   </metric>
   <metric>

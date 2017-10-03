@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSuiteResults>
   <testCase>
-    <startTime>15:05:06</startTime>
+    <startTime>16:03:50</startTime>
     <status>FINISHED</status>
     <testCaseId>15371370-7d81-4eae-ac22-a2f8b9257fe2</testCaseId>
     <testCaseName>ZZ_EE_Test1</testCaseName>
-    <timeTaken>1007</timeTaken>
+    <timeTaken>989</timeTaken>
     <testStepResults>
       <result>
-        <message>Step 1 [Sample Step 1] OK: took 591 ms</message>
+        <message>Step 1 [Sample Step 1] OK: took 592 ms</message>
         <name>Sample Step 1</name>
         <order>2</order>
-        <started>15:05:06.386</started>
+        <started>16:03:50.238</started>
         <status>OK</status>
-        <timeTaken>591</timeTaken>
+        <timeTaken>592</timeTaken>
       </result>
       <result>
-        <message>Step 2 [Sample Step 2] OK: took 416 ms</message>
+        <message>Step 2 [Sample Step 2] OK: took 397 ms</message>
         <name>Sample Step 2</name>
         <order>3</order>
-        <started>15:05:09.985</started>
+        <started>16:03:53.129</started>
         <status>OK</status>
-        <timeTaken>416</timeTaken>
+        <timeTaken>397</timeTaken>
       </result>
     </testStepResults>
     <testStepParameters>
@@ -38,28 +38,28 @@
   </testCase>
   <testCase>
     <reason>Failing due to failed test step</reason>
-    <startTime>15:05:11</startTime>
+    <startTime>16:03:54</startTime>
     <status>FAILED</status>
     <testCaseId>899d8d2d-9514-4d29-bb9e-02c713ec8b9f</testCaseId>
     <testCaseName>ZZ_EE_Test2</testCaseName>
-    <timeTaken>1028</timeTaken>
+    <timeTaken>756</timeTaken>
     <testStepResults>
       <result>
-        <message>Step 1 [Sample Step 1] OK: took 514 ms</message>
+        <message>Step 1 [Sample Step 1] OK: took 358 ms</message>
         <name>Sample Step 1</name>
         <order>2</order>
-        <started>15:05:11.630</started>
+        <started>16:03:54.175</started>
         <status>OK</status>
-        <timeTaken>514</timeTaken>
+        <timeTaken>358</timeTaken>
       </result>
       <result>
-        <message>Step 2 [Sample Step 2] FAILED: took 514 ms
+        <message>Step 2 [Sample Step 2] FAILED: took 398 ms
  -> [Match content of [status]] Comparison failed. Path: [$['status']]; Expected value: [Successx]; Actual value: [Success].</message>
         <name>Sample Step 2</name>
         <order>3</order>
-        <started>15:05:12.980</started>
+        <started>16:03:55.253</started>
         <status>FAILED</status>
-        <timeTaken>514</timeTaken>
+        <timeTaken>398</timeTaken>
       </result>
     </testStepResults>
     <testStepParameters>

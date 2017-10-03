@@ -1,7 +1,7 @@
 Status: FAILED
-Time Taken: 514
+Time Taken: 398
 Size: 186115
-Timestamp: Tue Oct 03 15:05:12 EDT 2017
+Timestamp: Tue Oct 03 16:03:55 EDT 2017
 TestStep: Sample Step 2
 
 ----------------- Messages ------------------------------
@@ -31,14 +31,14 @@ User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_121)
 
 
 ---------------- Response --------------------------
-set-cookie: [connect.sid=s%3Ahiyh6SI9hsGQeshkhXOMKCq0qdlISpya.LdpJREb3EvWhkqYIPjhoF4qZVGBXj0HjeV0gsi15ICs; Path=/; Expires=Tue, 03 Oct 2017 20:05:13 GMT; HttpOnly]
+set-cookie: [connect.sid=s%3AoJwpCUX550vOajG5ca4u-n0oqgP1xrm_.ak0WNhNRjn0PHhylwx5i8m3JK%2B4kNAB1AanSpVHuPrk; Path=/; Expires=Tue, 03 Oct 2017 21:03:55 GMT; HttpOnly]
 Server: [nginx/1.12.1]
 Access-Control-Allow-Origin: [*]
 ETag: [W/"2d703-a+LmlSdUvgy/35K+03WKew"]
 Connection: [keep-alive]
 #status#: [HTTP/1.1 200 OK]
 Content-Length: [186115]
-Date: [Tue, 03 Oct 2017 19:05:13 GMT]
+Date: [Tue, 03 Oct 2017 20:03:55 GMT]
 Access-Control-Allow-Headers: [Authorization, Origin, X-Requested-With, Content-Type, Accept,]
 Content-Type: [application/json; charset=utf-8]
 X-Powered-By: [Express]

@@ -181,6 +181,17 @@
             </executions>
          </plugin>
 
+         <!--Add Maven Site Plugin.-->
+         <!--This plugin improves test stability and prepares test data for Maven SureFire.-->
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-site-plugin</artifactId>
+            <version>3.5</version>
+            <configuration>
+               <locales>en,fr</locales>
+            </configuration>
+         </plugin>
+
 			<!-- ====== Run Java Class Execution Plugin  -->
 			 <plugin>
 	  				<groupId>org.codehaus.mojo</groupId>
@@ -196,24 +207,11 @@
 	      				</execution>
 	  				</executions>
 	  				<configuration>
-	  					 <testFailureIgnore>true</testFailureIgnore>
 	    				<!-- mainClass>main.java.util.ASampleClass</mainClass-->
 	    				<mainClass>com.msg.qa.eventengine.readyapi.zz_temp</mainClass>
 	    				<classpathScope>test</classpathScope>
 	  				</configuration>
 	 		</plugin>
-
-
-         <!--Add Maven Site Plugin.-->
-         <!--This plugin improves test stability and prepares test data for Maven SureFire.-->
-         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-site-plugin</artifactId>
-            <version>3.5</version>
-            <configuration>
-               <locales>en,fr</locales>
-            </configuration>
-         </plugin>
 
       </plugins>
    </build>
