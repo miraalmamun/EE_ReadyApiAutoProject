@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/v2.5/series/{series_id} - Put" path="/v2.5/series/{id}" id="c7eec5dd-cd84-4825-b6ec-db50ae01303b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="11a49b05-dfef-491f-a14e-a3b0f02197a9fileName">%2Fv2.5%2Fevents</con:setting><con:setting id="96a55409-fd66-4fab-99a5-9ce60085cf07fileName">%2Fv2.5%2Fevents</con:setting><con:setting id="1023e334-15c0-4ae3-bb7a-176e91683f87fileName">%2Fv2.5%2Fseries</con:setting><con:setting id="e9e90b63-7180-4719-bb36-03e43c5d2b6cfileName">%2Fv2.5%2Fseries%2F%7Bseries_id%7D</con:setting><con:setting id="c7eec5dd-cd84-4825-b6ec-db50ae01303bfileName">%2Fv2.5%2Fseries%2F%7Bseries_id%7D---Put</con:setting></con:settings><con:parameters><con:parameter><con:name>id</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/><con:description>Returns events filtered by applied artist id.
+</con:description></con:parameter></con:parameters><con:method name="v2_5_series_id_UpdateEvents" id="930f18c3-f9eb-4eab-984f-a42e975ecfee" method="PUT"><con:description>This call returns list of events, with optional filters. We do not support the data that is tagged with `platinum` and `resale` tickets. See notes on individual parameters below.
+  
+ 
+ ** *Authorization required ** 
+Fetch list of events</con:description><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>{
+  "status" : "string",
+  "code" : "string",
+  "message" : "string",
+  "results" : [ {
+    "id" : "string",
+    "artist_id" : [ {
+      "id" : "string"
+    } ],
+    "available_seats" : 0,
+    "category" : "string",
+    "city" : "string",
+    "description" : "string",
+    "date_time" : 1.1,
+    "door_open_time" : "string",
+    "group" : "string",
+    "host_url" : "string",
+    "host_id" : "string",
+    "is_sold_out" : true,
+    "is_on_holiday" : true,
+    "is_on_weekend" : true,
+    "is_on_weekday" : true,
+    "is_best_value" : true,
+    "location" : [ 0 ],
+    "on_sale" : true,
+    "on_sale_date" : {
+      "public" : {
+        "startDateTime" : "string",
+        "endDateTime" : "string",
+        "startTBD" : true
+      },
+      "presales" : [ {
+        "name" : "string",
+        "description" : "string",
+        "url" : "string",
+        "startDateTime" : "string",
+        "endDateTime" : "string"
+      } ]
+    },
+    "premium_partners" : {
+      "name" : "string",
+      "preferred_seating" : {
+        "is_available" : true
+      },
+      "early_on_sale" : {
+        "is_available" : true
+      }
+    },
+    "price" : {
+      "min" : 0,
+      "max" : 0
+    },
+    "publish" : true,
+    "name" : "string",
+    "status" : "string",
+    "sales_status" : "string",
+    "sub_category" : "string",
+    "static_seatmap_url" : "string",
+    "sponsors" : [ {
+      "title" : "string"
+    } ],
+    "start_date" : "string",
+    "start_time" : "string",
+    "timezone" : "string",
+    "total_seats" : 0,
+    "use_sponsor_logo_for_venue" : true,
+    "venue_id" : "string"
+  } ],
+  "meta" : {
+    "promo_code_title" : {
+      "promo_code_description" : "string",
+      "promo_code_terms" : "string"
+    },
+    "price_range" : {
+      "min_price" : 0,
+      "max_price" : 0
+    },
+    "date_range" : {
+      "start_date" : "string",
+      "end_date" : "string"
+    },
+    "sort_by" : [ "string" ],
+    "artist_id" : "string",
+    "venue_id" : "string",
+    "page" : {
+      "page_size" : "string",
+      "total_elements" : "string",
+      "total_pages" : "string",
+      "current_page" : "string"
+    },
+    "location" : {
+      "latitude" : "string",
+      "longitude" : "string",
+      "radius" : "string",
+      "unit" : "string"
+    },
+    "event" : {
+      "name" : "string",
+      "venue" : [ "string" ]
+    },
+    "category" : "string",
+    "sub_category" : "string",
+    "status" : "string"
+  }
+}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>409</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:even="http://qa-api.msg.com/v2.5/events">even:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>502</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>409</con:status><con:params/><con:element xmlns:even="https://api.msg.com/v2.5/events">even:Fault</con:element></con:representation><con:request name="Series_UpdateEvents" id="e075af1c-7a8b-40bd-883b-b8da702304f7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer e0554a52bf12b176ae14a9f85b60fcb2" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://api.msg.com</con:endpoint><con:request>{
+	"description": "Desc Updated Using Series PUT Request  ", 
+	"default_image": 
+		{
+			"height": "300", 
+			"width": "300", 
+			"ratio": "1240X900", 
+			"url":"https://res.cloudinary.com/msg-suites-uat/image/upload/v1507748957/eventengine/lhbil2ljy6u62fuggj7x.jpg"
+		}, 
+	"submitted_by": "admin@msg.com"
+}</con:request><con:originalUri>https://api.msg.com/v2.5/events</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder><con:environmentSpec><con:entry environmentId="0cc57d55-fe2d-4aed-9711-a070dae089cb"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="1a094b1f-40e4-4c2f-9161-6d62005e215a"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="b695a608-4e04-4152-856c-6fc46423d14e"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="91bc2533-d754-4ed7-8bcb-6d204390b2af"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="9aceb8bd-5bce-4527-ba8b-5116011b2c2e"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="2f76bc83-fd85-49f5-9bce-1261dc2b8119"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="2f3aa2fe-e2c5-41f6-a34e-040213a1f4e4"><con:authProfile>No Authorization</con:authProfile></con:entry></con:environmentSpec></con:request><con:environmentSpec><con:entry environmentId="0cc57d55-fe2d-4aed-9711-a070dae089cb"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="2f76bc83-fd85-49f5-9bce-1261dc2b8119"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:method><con:environmentSpec><con:entry environmentId="0cc57d55-fe2d-4aed-9711-a070dae089cb"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="2f76bc83-fd85-49f5-9bce-1261dc2b8119"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:resource>

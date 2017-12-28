@@ -25,14 +25,16 @@ public class zz_temp {
 
 	
 	static String projectID = "EventEngine";
+	
 	//static String versionID = "Gretzky 2.11.0";
+	//static String versionID = "14702";
 	static String versionID = "-1";
 
-	//static String versionID = "14702";
-
-	//static String cycleID = System.getProperty("testCycle");
-	//static String cycleID = "Smoke Test Run - QA";
-	static String cycleID = "Ad hoc";
+	
+	//static String cycleID = System.getProperty("testCycle"); // Get From Jenkins
+	static String cycleID = "Smoke_TestSuite_Template";
+	//static String cycleID = "REgression_TestSuite_Template";
+	//static String cycleID = "Ad hoc";
 
 
 

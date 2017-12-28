@@ -18,4 +18,4 @@ for ( testCaseResult in runner.results )
          testStepResult.messages.each() { msg -> log.info msg }
       }
    //}
-}</con:tearDownScript><con:reportScript/><con:reportParameters/><con:environmentSpec><con:entry environmentId="0cc57d55-fe2d-4aed-9711-a070dae089cb"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:testSuite>
+}</con:tearDownScript><con:reportScript/><con:reportParameters/><con:environmentSpec><con:entry environmentId="0cc57d55-fe2d-4aed-9711-a070dae089cb"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="2f76bc83-fd85-49f5-9bce-1261dc2b8119"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:testSuite>
