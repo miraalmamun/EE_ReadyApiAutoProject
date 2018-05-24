@@ -65,7 +65,7 @@ public class zz_temp {
 			mJU.updateStatusForSingleTestCasesInJira(TestcaseName, "FAIL");*/
 
 			
-			File file = new File("//Users//rasulm//git//EE_ReadyApiAutoProject//reports//readyapireports//Event-Engine-API-Calls-V25x//testSuiteResults.xml");
+			File file = new File("//Users//rasulm//eclipse-workspace//MSGEventEngine//EE_SoapReadyAPIProjects//EE_ReadyAPIProjects_V2.0_Composit//reports//readyapireports//Event-Engine-API-Calls-V25x//testSuiteResults.xml");
 			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
 			Document doc = dBuilder.parse(file);
 			doc.getDocumentElement().normalize();
