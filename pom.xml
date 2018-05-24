@@ -31,6 +31,7 @@
 
    <build>
       <plugins>
+      
          <plugin>
 
             <!--Plugin groupID used to uniquely identify the project with the plugin.-->
@@ -43,7 +44,7 @@
             <!--Specifies your ReadyAPI version. Maven will use the appropriate plugin version.-->
             <!--IMPORTANT: Must be the same as your ReadyAPI version.-->
             <!--For maintenance builds, use 2.1.0-m-SNAPSHOT instead.-->
-            <version>2.1.0</version>
+            <version>2.3.0</version>
 
             <!--Add a JDBC driver dependency if your tests use JDBC.-->
             <!--Maven imports and installs the driver automatically.-->
