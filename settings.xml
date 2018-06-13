@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="e44f0904-c81e-4ebf-ab3c-fe0c91a6bdf5" created="2.1.0" activeEnvironment="Prod" name="EE Composit" resourceRoot="" compositeProjectFormat="1.3" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="e44f0904-c81e-4ebf-ab3c-fe0c91a6bdf5fileName">EE_ReadyApiAutoProject</con:setting><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="e44f0904-c81e-4ebf-ab3c-fe0c91a6bdf5" created="2.1.0" activeEnvironment="staging" name="EE Composit" resourceRoot="" compositeProjectFormat="1.3" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="e44f0904-c81e-4ebf-ab3c-fe0c91a6bdf5fileName">EE_ReadyApiAutoProject</con:setting><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
   <con:entry key="Report Format(s)" value="XML"/>
   <con:entry key="Host:Port" value=""/>
   <con:entry key="Export JUnit Results" value="false"/>
