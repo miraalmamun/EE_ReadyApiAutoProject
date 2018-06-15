@@ -37,14 +37,17 @@
             <!--Plugin groupID used to uniquely identify the project with the plugin.-->
             <groupId>com.smartbear</groupId>
 
-
             <!--Plugin artifactId used to find the plugin in the project.-->
             <artifactId>ready-api-maven-plugin</artifactId>
 
             <!--Specifies your ReadyAPI version. Maven will use the appropriate plugin version.-->
             <!--IMPORTANT: Must be the same as your ReadyAPI version.-->
             <!--For maintenance builds, use 2.1.0-m-SNAPSHOT instead.-->
-            <version>2.3.0</version>
+            
+            		<!--## Verion That Installed in Rasul Desktop is Below### -->
+            		<!--version>2.4.0</version-->
+            		<version>1.3.1</version>
+            		
 
             <!--Add a JDBC driver dependency if your tests use JDBC.-->
             <!--Maven imports and installs the driver automatically.-->
