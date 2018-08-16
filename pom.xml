@@ -36,7 +36,6 @@
 
             <!--Plugin groupID used to uniquely identify the project with the plugin.-->
             <groupId>com.smartbear</groupId>
-
             <!--Plugin artifactId used to find the plugin in the project.-->
             <artifactId>ready-api-maven-plugin</artifactId>
 
@@ -197,7 +196,7 @@
          </plugin>
 
 			<!-- ====== Run Java Class Execution Plugin  -->
-			 <plugin>
+			 <!--plugin>
 	  				<groupId>org.codehaus.mojo</groupId>
 	  				<artifactId>exec-maven-plugin</artifactId>
 	  				<version>1.6.0</version>
@@ -211,11 +210,10 @@
 	      				</execution>
 	  				</executions>
 	  				<configuration>
-	    				<!-- mainClass>main.java.util.ASampleClass</mainClass-->
 	    				<mainClass>com.msg.qa.eventengine.readyapi.zz_temp</mainClass>
 	    				<classpathScope>test</classpathScope>
 	  				</configuration>
-	 		</plugin>
+	 		</plugin-->
 
       </plugins>
    </build>
