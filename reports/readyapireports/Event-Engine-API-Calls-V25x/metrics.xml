@@ -4,63 +4,63 @@
     <category>Result Metrics</category>
     <icon>delay_step.png</icon>
     <name>Start Time</name>
-    <value>Tue Oct 03 16:03:50 EDT 2017</value>
+    <value>Fri Jun 15 15:12:56 EDT 2018</value>
     <valueIcon/>
   </metric>
   <metric>
     <category>Result Metrics</category>
     <icon>delay_step.png</icon>
     <name>End Time</name>
-    <value>Tue Oct 03 16:03:56 EDT 2017</value>
+    <value>Fri Jun 15 15:13:07 EDT 2018</value>
     <valueIcon/>
   </metric>
   <metric>
     <category>Result Metrics</category>
     <icon>delay_step.png</icon>
     <name>Time Taken</name>
-    <value>6130 ms</value>
+    <value>11022 ms</value>
     <valueIcon/>
   </metric>
   <metric>
     <category>Result Metrics</category>
     <icon>/test_case.png</icon>
     <name>TestCase Count</name>
-    <value>2</value>
+    <value>4</value>
     <valueIcon/>
   </metric>
   <metric>
     <category>Result Metrics</category>
     <icon>/test_case.png</icon>
     <name>Failed TestCase Count</name>
-    <value>1</value>
+    <value>2</value>
     <valueIcon/>
   </metric>
   <metric>
     <category>Result Metrics</category>
     <icon>/teststeps.gif</icon>
     <name>TestStep Count</name>
-    <value>4</value>
+    <value>56</value>
     <valueIcon/>
   </metric>
   <metric>
     <category>Result Metrics</category>
     <icon>/teststeps.gif</icon>
     <name>Failed TestStep Count</name>
-    <value>1</value>
+    <value>10</value>
     <valueIcon/>
   </metric>
   <metric>
     <category>Result Metrics</category>
     <icon>/assertions.png</icon>
     <name>Assertion Count</name>
-    <value>8</value>
+    <value>209</value>
     <valueIcon/>
   </metric>
   <metric>
     <category>Result Metrics</category>
     <icon>/assertions.png</icon>
     <name>Failed Assertion Count</name>
-    <value>1</value>
+    <value>11</value>
     <valueIcon/>
   </metric>
 </metrics>

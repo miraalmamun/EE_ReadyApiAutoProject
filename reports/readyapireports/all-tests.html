@@ -13,12 +13,20 @@
 <th>Class</th><th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time (s)</th>
 </tr>
 <tr valign="top" class="TableRowColor">
-<td><a href="EE Composit2/1_EE Composit2.Event Engine API Calls V2.5x.html">EE Composit2.Event Engine API Calls V2.5x</a></td><td><a name="ZZ_EE_Test1"></a><a href="EE Composit2/1_EE Composit2.Event Engine API Calls V2.5x.html#ZZ_EE_Test1">ZZ_EE_Test1</a></td><td>Success</td><td></td><td>0.989</td>
+<td><a href="EE Composit/1_EE Composit.Event Engine API Calls V2.5x.html">EE Composit.Event Engine API Calls V2.5x</a></td><td><a name="Venues - POSITIVE"></a><a href="EE Composit/1_EE Composit.Event Engine API Calls V2.5x.html#Venues - POSITIVE">Venues - POSITIVE</a></td><td>Success</td><td></td><td>0.600</td>
 </tr>
 <tr valign="top" class="Failure">
-<td><a href="EE Composit2/1_EE Composit2.Event Engine API Calls V2.5x.html">EE Composit2.Event Engine API Calls V2.5x</a></td><td><a name="ZZ_EE_Test2"></a><a href="EE Composit2/1_EE Composit2.Event Engine API Calls V2.5x.html#ZZ_EE_Test2">ZZ_EE_Test2</a></td><td>Failure</td><td>Failing due to failed test step<br>
+<td><a href="EE Composit/1_EE Composit.Event Engine API Calls V2.5x.html">EE Composit.Event Engine API Calls V2.5x</a></td><td><a name="Artists - POSITIVE"></a><a href="EE Composit/1_EE Composit.Event Engine API Calls V2.5x.html#Artists - POSITIVE">Artists - POSITIVE</a></td><td>Failure</td><td>Failing due to failed test step<br>
 <br>
-<code><h3><b>Sample Step 2 Failed</b></h3><pre>[Match content of [status]] Comparison failed. Path: [$['status']]; Expected value: [Successx]; Actual value: [Success].<br/></pre><hr/></code></td><td>0.756</td>
+<code><h3><b>Artist ID Events - API Call Only Failed</b></h3><pre>[Validate Event ID at the TOP] Missing token [results":[{"id] in Response<br/></pre><hr/><h3><b>Artist ID Events - Start and End Date Failed</b></h3><pre>[Valid Result is Not Empty - > Result []] Result is Empty Result[]. Expression: (totalelement != 0). Values: totalelement = 0<br/></pre><hr/><h3><b>Artist ID Events - Start and End Date &amp; Page Failed</b></h3><pre>[Valid Result is Not Empty - > Result []] Result is Empty Result[]. Expression: (totalelement != 0). Values: totalelement = 0<br/></pre><hr/><h3><b>Artist ID Events - Start and End Date &amp; Size Failed</b></h3><pre>[Valid Result is Not Empty - > Result []] Result is Empty Result[]. Expression: (totalelement != 0). Values: totalelement = 0<br/></pre><hr/><h3><b>Artist ID Events - Start and End Date &amp; Size &amp; Page Failed</b></h3><pre>[Valid Result is Not Empty - > Result []] Result is Empty Result[]. Expression: (totalelement != 0). Values: totalelement = 0<br/></pre><hr/></code></td><td>1.951</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="EE Composit/1_EE Composit.Event Engine API Calls V2.5x.html">EE Composit.Event Engine API Calls V2.5x</a></td><td><a name="Dates - POSITIVE"></a><a href="EE Composit/1_EE Composit.Event Engine API Calls V2.5x.html#Dates - POSITIVE">Dates - POSITIVE</a></td><td>Success</td><td></td><td>0.588</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="EE Composit/1_EE Composit.Event Engine API Calls V2.5x.html">EE Composit.Event Engine API Calls V2.5x</a></td><td><a name="Events - POSITIVE"></a><a href="EE Composit/1_EE Composit.Event Engine API Calls V2.5x.html#Events - POSITIVE">Events - POSITIVE</a></td><td>Failure</td><td>Failing due to failed test step<br>
+<br>
+<code><h3><b>Return A Event &amp; Check Response Body Failed</b></h3><pre>[Match content of [edp_url] using RegEx] Comparison failed. Path: [$['results'][0]['msg_edp_url']]; Expected value: [true]; Actual value: [false].<br/>[Check for existence of [default_image]] Comparison failed. Path: [$['results'][0]['default_image']]; Expected value: [true]; Actual value: [false].<br/></pre><hr/><h3><b>Sort by Start Date Ascending Failed</b></h3><pre>[Valid Result is Not Empty - > Result []] Result is Empty Result[]. Expression: (totalelement != 0). Values: totalelement = 0<br/></pre><hr/><h3><b>Sort by Start Date Descending Failed</b></h3><pre>[Valid Result is Not Empty - > Result []] Result is Empty Result[]. Expression: (totalelement != 0). Values: totalelement = 0<br/></pre><hr/><h3><b>Start Date and End Date and Min price and Max price Failed</b></h3><pre>[Valid Result is Not Empty - > Result []] Result is Empty Result[]. Expression: (totalelement != 0). Values: totalelement = 0<br/></pre><hr/><h3><b>Start Date and End Date and Min price and Max price &amp; venue_id Failed</b></h3><pre>[Valid Result is Not Empty - > Result []] Result is Empty Result[]. Expression: (totalelement != 0). Values: totalelement = 0<br/></pre><hr/></code></td><td>2.441</td>
 </tr>
 </table>
 </body>

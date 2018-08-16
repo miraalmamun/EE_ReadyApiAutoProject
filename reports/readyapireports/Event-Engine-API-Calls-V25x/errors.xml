@@ -3,8 +3,71 @@
   <error>
     <detail>&lt;Error Detail disabled></detail>
     <icon>rest_request_step.png</icon>
-    <testCaseName>ZZ_EE_Test2</testCaseName>
-    <testStepName>Sample Step 2</testStepName>
+    <testCaseName>Artists - POSITIVE</testCaseName>
+    <testStepName>Artist ID Events - API Call Only</testStepName>
+    <testSuiteName>Event Engine API Calls V2.5x</testSuiteName>
+  </error>
+  <error>
+    <detail>&lt;Error Detail disabled></detail>
+    <icon>rest_request_step.png</icon>
+    <testCaseName>Artists - POSITIVE</testCaseName>
+    <testStepName>Artist ID Events - Start and End Date</testStepName>
+    <testSuiteName>Event Engine API Calls V2.5x</testSuiteName>
+  </error>
+  <error>
+    <detail>&lt;Error Detail disabled></detail>
+    <icon>rest_request_step.png</icon>
+    <testCaseName>Artists - POSITIVE</testCaseName>
+    <testStepName>Artist ID Events - Start and End Date &amp; Page</testStepName>
+    <testSuiteName>Event Engine API Calls V2.5x</testSuiteName>
+  </error>
+  <error>
+    <detail>&lt;Error Detail disabled></detail>
+    <icon>rest_request_step.png</icon>
+    <testCaseName>Artists - POSITIVE</testCaseName>
+    <testStepName>Artist ID Events - Start and End Date &amp; Size</testStepName>
+    <testSuiteName>Event Engine API Calls V2.5x</testSuiteName>
+  </error>
+  <error>
+    <detail>&lt;Error Detail disabled></detail>
+    <icon>rest_request_step.png</icon>
+    <testCaseName>Artists - POSITIVE</testCaseName>
+    <testStepName>Artist ID Events - Start and End Date &amp; Size &amp; Page</testStepName>
+    <testSuiteName>Event Engine API Calls V2.5x</testSuiteName>
+  </error>
+  <error>
+    <detail>&lt;Error Detail disabled></detail>
+    <icon>rest_request_step.png</icon>
+    <testCaseName>Events - POSITIVE</testCaseName>
+    <testStepName>Return A Event &amp; Check Response Body</testStepName>
+    <testSuiteName>Event Engine API Calls V2.5x</testSuiteName>
+  </error>
+  <error>
+    <detail>&lt;Error Detail disabled></detail>
+    <icon>rest_request_step.png</icon>
+    <testCaseName>Events - POSITIVE</testCaseName>
+    <testStepName>Sort by Start Date Ascending</testStepName>
+    <testSuiteName>Event Engine API Calls V2.5x</testSuiteName>
+  </error>
+  <error>
+    <detail>&lt;Error Detail disabled></detail>
+    <icon>rest_request_step.png</icon>
+    <testCaseName>Events - POSITIVE</testCaseName>
+    <testStepName>Sort by Start Date Descending</testStepName>
+    <testSuiteName>Event Engine API Calls V2.5x</testSuiteName>
+  </error>
+  <error>
+    <detail>&lt;Error Detail disabled></detail>
+    <icon>rest_request_step.png</icon>
+    <testCaseName>Events - POSITIVE</testCaseName>
+    <testStepName>Start Date and End Date and Min price and Max price</testStepName>
+    <testSuiteName>Event Engine API Calls V2.5x</testSuiteName>
+  </error>
+  <error>
+    <detail>&lt;Error Detail disabled></detail>
+    <icon>rest_request_step.png</icon>
+    <testCaseName>Events - POSITIVE</testCaseName>
+    <testStepName>Start Date and End Date and Min price and Max price &amp; venue_id</testStepName>
     <testSuiteName>Event Engine API Calls V2.5x</testSuiteName>
   </error>
 </errors>

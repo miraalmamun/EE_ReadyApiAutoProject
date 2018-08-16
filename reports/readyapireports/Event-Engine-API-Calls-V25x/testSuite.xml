@@ -5,7 +5,7 @@
     <label>Venues - POSITIVE</label>
     <loadTestCount>0</loadTestCount>
     <securityTestCount>0</securityTestCount>
-    <testStepCount>6</testStepCount>
+    <testStepCount>8</testStepCount>
   </testCase>
   <testCase>
     <disabled>false</disabled>
@@ -68,7 +68,7 @@
     <label>Events - POSITIVE</label>
     <loadTestCount>0</loadTestCount>
     <securityTestCount>0</securityTestCount>
-    <testStepCount>17</testStepCount>
+    <testStepCount>18</testStepCount>
   </testCase>
   <testCase>
     <disabled>false</disabled>
@@ -86,23 +86,107 @@
   </testCase>
   <testCase>
     <disabled>false</disabled>
+    <label>Events - Promocode</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>1</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Events - Put Method</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>1</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Series - Put Methods</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>1</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
     <label>ZZ_Version Gretzky 2.11.0</label>
     <loadTestCount>0</loadTestCount>
     <securityTestCount>0</securityTestCount>
-    <testStepCount>7</testStepCount>
+    <testStepCount>4</testStepCount>
   </testCase>
   <testCase>
     <disabled>false</disabled>
-    <label>ZZ_EE_Test1</label>
+    <label>ZZ_Version Gretzky 2.13.0</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>9</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>ZZ_Version Gretzky 2.14.0 Series</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>5</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>ZZ_Version Gretzky 2.14.1 Update_AT</label>
     <loadTestCount>0</loadTestCount>
     <securityTestCount>0</securityTestCount>
     <testStepCount>2</testStepCount>
   </testCase>
   <testCase>
     <disabled>false</disabled>
-    <label>ZZ_EE_Test2</label>
+    <label>ZZ_Version Gretzky 2.15 SalesForce</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>4</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>ZZ_Version Gretzky 2.15 Add Remove Event</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>4</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>ZZ_Version Gretzky 2.16 Static Data</label>
     <loadTestCount>0</loadTestCount>
     <securityTestCount>0</securityTestCount>
     <testStepCount>2</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>ZZ_Version Gretzky 2.17</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>17</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>ZZ_Version Gretzky 2.18</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>3</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>ZZ_Version Gretzky 2.19</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>1</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Gretzky 2.20.0 &amp; 2.21.0  PROMO-Seat Map</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>4</testStepCount>
+  </testCase>
+  <testCase>
+    <disabled>false</disabled>
+    <label>Gretzky 2.21.0 Related Events</label>
+    <loadTestCount>0</loadTestCount>
+    <securityTestCount>0</securityTestCount>
+    <testStepCount>11</testStepCount>
   </testCase>
 </testSuite>

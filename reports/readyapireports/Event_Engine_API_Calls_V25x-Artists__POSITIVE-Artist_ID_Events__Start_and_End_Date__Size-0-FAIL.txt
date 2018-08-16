@@ -1,0 +1,47 @@
+Status: FAIL
+Time Taken: 50
+Size: 237
+Timestamp: Fri Jun 15 15:13:02 EDT 2018
+TestStep: Artist ID Events - Start and End Date & Size
+
+----------------- Messages ------------------------------
+[Valid Result is Not Empty - > Result []] Result is Empty Result[]. Expression: (totalelement != 0). Values: totalelement = 0
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://qa-api.msg.com
+Method: GET
+StatusCode: 200
+URL: https://qa-api.msg.com/v2.5/artists/K8vZ917Go7V/events?end_date=12312017&start_date=01012016&size=1
+
+---------------- Request ---------------------------
+Authorization: [Bearer cd9a70efa41013af89909eb70fb4d528]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_121)]
+Host: [qa-api.msg.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+
+GET https://qa-api.msg.com/v2.5/artists/K8vZ917Go7V/events?end_date=12312017&start_date=01012016&size=1 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Authorization: Bearer cd9a70efa41013af89909eb70fb4d528
+Content-Length: 0
+Host: qa-api.msg.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_121)
+
+
+---------------- Response --------------------------
+set-cookie: [connect.sid=s%3AFFElArJ52E0qBE4jSgqXC6Gqa9U3IEAZ.4iyBnUP2wQkhYSrN69CAyuHRpsncQ3y6RZfA2vmhHcc; Path=/; Expires=Fri, 15 Jun 2018 20:13:05 GMT; HttpOnly]
+Server: [nginx/1.12.1]
+Access-Control-Allow-Origin: [*]
+ETag: [W/"ed-tvVuRBrgs91oZizxgEcZMW9X+ag"]
+Connection: [keep-alive]
+#status#: [HTTP/1.1 200 OK]
+Content-Length: [237]
+Date: [Fri, 15 Jun 2018 19:13:05 GMT]
+Access-Control-Allow-Headers: [Authorization, Origin, X-Requested-With, Content-Type, Accept,]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [Express]
+
+{"status":"Success","code":200,"message":"Ok","results":[],"meta":{"date_range":{"end_date":"12-31-2017","start_date":"01-01-2016"},"pagination":{"size":1,"page":1,"total_elements":0},"artist_id":"K8vZ917Go7V","artist_name":"Lady Gaga"}}

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="d20ee7f3-2368-4477-88e9-9e621228bab4" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="******** Seperator************" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="d20ee7f3-2368-4477-88e9-9e621228bab4fileName">%2A%2A%2A%2A%2A%2A%2A%2A-Seperator%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:properties/><con:reportParameters/></con:testCase>

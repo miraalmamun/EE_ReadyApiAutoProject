@@ -1,0 +1,49 @@
+Status: FAIL
+Time Taken: 41
+Size: 4075
+Timestamp: Fri Jun 15 15:13:03 EDT 2018
+TestStep: Return A Event & Check Response Body
+
+----------------- Messages ------------------------------
+[Match content of [edp_url] using RegEx] Comparison failed. Path: [$['results'][0]['msg_edp_url']]; Expected value: [true]; Actual value: [false].
+[Check for existence of [default_image]] Comparison failed. Path: [$['results'][0]['default_image']]; Expected value: [true]; Actual value: [false].
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://qa-api.msg.com
+Encoding: UTF-8
+Method: GET
+StatusCode: 200
+URL: https://qa-api.msg.com/v2.5/events/3B005352968117E8
+
+---------------- Request ---------------------------
+Authorization: [Bearer cd9a70efa41013af89909eb70fb4d528]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_121)]
+Host: [qa-api.msg.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+
+GET https://qa-api.msg.com/v2.5/events/3B005352968117E8 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Authorization: Bearer cd9a70efa41013af89909eb70fb4d528
+Content-Length: 0
+Host: qa-api.msg.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_121)
+
+
+---------------- Response --------------------------
+set-cookie: [connect.sid=s%3A69IO0yRFV3-2JZiqtYmmVbb-ewtPMvMn.LRfAsMWLcVY1aAYVa61fXCt3GLwVodnZDHL00M%2FBpgc; Path=/; Expires=Fri, 15 Jun 2018 20:13:06 GMT; HttpOnly]
+Server: [nginx/1.12.1]
+Access-Control-Allow-Origin: [*]
+ETag: [W/"feb-mHiuV0WGXzH0N4azUhfezEDpda0"]
+Connection: [keep-alive]
+#status#: [HTTP/1.1 200 OK]
+Content-Length: [4075]
+Date: [Fri, 15 Jun 2018 19:13:06 GMT]
+Access-Control-Allow-Headers: [Authorization, Origin, X-Requested-With, Content-Type, Accept,]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [Express]
+
+{"status":"Success","code":200,"message":"Ok","results":[{"on_sale":true,"is_sold_out":false,"is_on_holiday":false,"is_on_weekend":false,"is_on_weekday":true,"sponsors":[],"artists":[{"id":"K8vZ9171uv0","name":"Billy Joel"}],"is_best_value":false,"created_at":"06/08/2018","updated_at":"2018-06-08T21:51:34.148Z","last_imported_at":"2018-06-08T21:51:34.148Z","sales_status":"onsale","status":"active","tags":[],"social_tags":[],"publish":true,"premium_partners":[],"images":[{"ratio":"16_9","url":"https://s1.ticketm.net/dam/a/dce/f1af869f-8fc6-45a4-838e-066aed222dce_226121_RECOMENDATION_16_9.jpg","width":100,"height":56,"fallback":false},{"ratio":"3_2","url":"https://s1.ticketm.net/dam/a/dce/f1af869f-8fc6-45a4-838e-066aed222dce_226121_TABLET_LANDSCAPE_3_2.jpg","width":1024,"height":683,"fallback":false},{"ratio":"16_9","url":"https://s1.ticketm.net/dam/a/dce/f1af869f-8fc6-45a4-838e-066aed222dce_226121_RETINA_LANDSCAPE_16_9.jpg","width":1136,"height":639,"fallback":false},{"ratio":"16_9","url":"https://s1.ticketm.net/dam/a/dce/f1af869f-8fc6-45a4-838e-066aed222dce_226121_TABLET_LANDSCAPE_LARGE_16_9.jpg","width":2048,"height":1152,"fallback":false},{"ratio":"3_2","url":"https://s1.ticketm.net/dam/a/dce/f1af869f-8fc6-45a4-838e-066aed222dce_226121_RETINA_PORTRAIT_3_2.jpg","width":640,"height":427,"fallback":false},{"ratio":"3_2","url":"https://s1.ticketm.net/dam/a/dce/f1af869f-8fc6-45a4-838e-066aed222dce_226121_ARTIST_PAGE_3_2.jpg","width":305,"height":203,"fallback":false},{"ratio":"16_9","url":"https://s1.ticketm.net/dam/a/dce/f1af869f-8fc6-45a4-838e-066aed222dce_226121_EVENT_DETAIL_PAGE_16_9.jpg","width":205,"height":115,"fallback":false},{"ratio":"16_9","url":"https://s1.ticketm.net/dam/a/dce/f1af869f-8fc6-45a4-838e-066aed222dce_226121_TABLET_LANDSCAPE_16_9.jpg","width":1024,"height":576,"fallback":false},{"ratio":"4_3","url":"https://s1.ticketm.net/dam/a/dce/f1af869f-8fc6-45a4-838e-066aed222dce_226121_CUSTOM.jpg","width":305,"height":225,"fallback":false},{"ratio":"16_9","url":"https://s1.ticketm.net/dam/a/dce/f1af869f-8fc6-45a4-838e-066aed222dce_226121_RETINA_PORTRAIT_16_9.jpg","width":640,"height":360,"fallback":false}],"use_sponsor_logo_for_venue":false,"related_events":["3B005432FAF23284","3B005497DAC32341","3B0054A1A58A239F"],"source":"TICKETMASTER","id":"3B005352968117E8","availability_percentage":21,"total_seats":7989,"available_seats":1725,"door_open_time":"19:00:00","name":"Billy Joel - In Concert","description":"","category":[{"name":"Music"}],"local_date":"2018-12-19T20:00:00.000Z","timezone":"America/New_York","time_of_day":"Evening","static_seatmap_url":"https://s1.ticketm.net/tmimages/venue/maps/ny5/52352s.gif","city":"New York","sub_category":"Rock,Pop","location":[-73.9916006,40.7497062],"on_sale_date":{"public":{"startDateTime":"2018-05-04T14:00:00Z","startTBD":false,"endDateTime":"2018-12-20T01:00:00Z"},"presales":[{"startDateTime":"2018-04-30T14:00:00Z","endDateTime":"2018-05-04T02:00:00Z","name":"Citi® Cardmember Presale"},{"startDateTime":"2018-05-03T14:00:00Z","endDateTime":"2018-05-04T02:00:00Z","name":"AEG Presale"},{"startDateTime":"2018-05-03T14:00:00Z","endDateTime":"2018-05-04T02:00:00Z","name":"Sirius Presale"},{"startDateTime":"2018-05-04T14:00:00Z","endDateTime":"2018-12-20T01:00:00Z","name":"Citi ® Cardmember Preferred Tickets"},{"startDateTime":"2018-05-02T14:00:00Z","endDateTime":"2018-05-03T02:00:00Z","name":"Verified Fan Presale"}]},"tm_classifications":[{"primary":true,"segment":{"id":"KZFzniwnSyZfZ7v7nJ","name":"Music"},"genre":{"id":"KnvZfZ7vAeA","name":"Rock"},"subGenre":{"id":"KZazBEonSMnZfZ7v6F1","name":"Pop"},"type":{"id":"KZAyXgnZfZ7v7nI","name":"Undefined"},"subType":{"id":"KZFzBErXgnZfZ7v7lJ","name":"Undefined"},"family":false}],"venue_id":"KovZpZA7AAEA","date_time":1545267600000,"start_time":"20:00:00","start_date":"12/19/2018","host_url":"https://www.ticketmaster.com/billy-joel-in-concert-new-york-new-york-12-19-2018/event/3B005352968117E8","host_id":"3B005352968117E8","series_id":"ASA8IJINGWMNOT63IEKH","price_class":"A","price":{"min":65.5,"max":139.5}}]}

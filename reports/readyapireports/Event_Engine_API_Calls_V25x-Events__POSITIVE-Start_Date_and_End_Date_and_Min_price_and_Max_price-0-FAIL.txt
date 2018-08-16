@@ -1,0 +1,48 @@
+Status: FAIL
+Time Taken: 40
+Size: 237
+Timestamp: Fri Jun 15 15:13:06 EDT 2018
+TestStep: Start Date and End Date and Min price and Max price
+
+----------------- Messages ------------------------------
+[Valid Result is Not Empty - > Result []] Result is Empty Result[]. Expression: (totalelement != 0). Values: totalelement = 0
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://qa-api.msg.com
+Encoding: UTF-8
+Method: GET
+StatusCode: 200
+URL: https://qa-api.msg.com/v2.5/events?end_date=07012017&min_price=15&max_price=100&start_date=03302017
+
+---------------- Request ---------------------------
+Authorization: [Bearer cd9a70efa41013af89909eb70fb4d528]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_121)]
+Host: [qa-api.msg.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+
+GET https://qa-api.msg.com/v2.5/events?end_date=07012017&min_price=15&max_price=100&start_date=03302017 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Authorization: Bearer cd9a70efa41013af89909eb70fb4d528
+Content-Length: 0
+Host: qa-api.msg.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_121)
+
+
+---------------- Response --------------------------
+set-cookie: [connect.sid=s%3ARH4WjJHY1XSoyH4In5wiVlV7mUOI2gEF.k3jogQ3ngcuRGQ%2FNu%2Fn7XKulZ7xRD9qmNEM%2FObjgPWA; Path=/; Expires=Fri, 15 Jun 2018 20:13:09 GMT; HttpOnly]
+Server: [nginx/1.12.1]
+Access-Control-Allow-Origin: [*]
+ETag: [W/"ed-qMhh0pilC+K2Hlwn93ZUW/f9O8c"]
+Connection: [keep-alive]
+#status#: [HTTP/1.1 200 OK]
+Content-Length: [237]
+Date: [Fri, 15 Jun 2018 19:13:09 GMT]
+Access-Control-Allow-Headers: [Authorization, Origin, X-Requested-With, Content-Type, Accept,]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [Express]
+
+{"status":"Success","code":200,"message":"Ok","results":[],"meta":{"date_range":{"end_date":"07-01-2017","start_date":"03-30-2017"},"pagination":{"size":20,"page":1,"total_elements":0},"price_range":{"min_price":"15","max_price":"100"}}}
